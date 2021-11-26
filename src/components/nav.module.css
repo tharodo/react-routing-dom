@@ -1,0 +1,14 @@
+.styleNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    color: white;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
