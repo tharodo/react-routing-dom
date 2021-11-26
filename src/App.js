@@ -3,16 +3,29 @@ import './App.css';
 import Shop from './components/Shop';
 import About from './components/About';
 import Nav from './components/Nav';
-import {BrowserRouter as Router , Switch, Route } from 'react-router-dom'
+import Home from './components/Home';
+import {BrowserRouter as Router , Switch, Route} from 'react-router-dom'
 
 
 function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <About></About>
-      <Shop></Shop>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav/>
+        <Route
+          path="/"
+          component={Home}
+        />
+        <Route
+          path="/about" 
+          component={About}
+        />
+        <Route
+          path="/shop"
+          component={Shop}
+        />
+      </div>    
+    </Router>
   );
 }
 
