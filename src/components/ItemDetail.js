@@ -15,12 +15,34 @@ function ItemDetail({match}) {
         setItem(item);
     }
 
-    const [item, setItem] = useState({});
+    const [item, setItem] = useState({
+    });
 
     return (
-        <div>
-            <h1>{item.title}</h1>
-            <img className={style.imgDetail} src={item.image} alt="" />
+        <div className={style.product}>
+            <div className={style.image}>
+                <img className={style.imgDetail} src={item.image} alt="" />    
+            </div>
+            <div className={style.description}>
+                <div className={style.title}>
+                    <h1>{item.title}</h1>
+                </div>
+                <div className={style.detail}>
+                    <div className={style.price}>
+                        <h2>Price: {item.price}$</h2>
+                    </div>                    
+                    <div>
+                        <ul>
+                            <li>Category: {item.category}</li>
+                            <li>Description: {item.description}</li>
+                        </ul>                        
+                    </div>
+                    <div className={style.button}>
+                        Add to cart 
+                    </div>
+
+                </div>
+            </div>
         </div>
     );
 }

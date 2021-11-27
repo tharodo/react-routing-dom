@@ -3,11 +3,24 @@
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    box-shadow: 1px 2px 20px rgb(182, 182, 182);
 }
 .navLinks{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 20%;
     list-style: none;
+    text-transform: uppercase;
 }
+.navDetail{
+    padding: 10px 20px;
+    transition: .5s;
+    border-radius: 20px;
+}
+.navDetail:hover{
+    background-color: #EAEAEA;
+    color: #5271C4;
+    transition: .5s;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import style from './shop.module.css'
 
 function Shop() {
 
@@ -21,11 +22,14 @@ function Shop() {
         <div>
             {items.map(item => (
                 <div key={item.id}>
-                    <h3>
+                    <ul>
                         <Link to={`/shop/${item.id}`}>
-                            {item.title}
+                            <li className={style.item}>
+                                    {item.title}                         
+                            </li>
                         </Link>
-                    </h3>                    
+                    </ul>
+
                 </div>
                 
             ))}            

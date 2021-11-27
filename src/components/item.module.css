@@ -1,3 +1,43 @@
+
+.product{
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.image{
+    display: flex;
+}
 .imgDetail {
-    width: 200px;
+    object-fit: cover;
+    width:500px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.detail ul li{
+    font-size: 20px;
+    list-style: square;
+    line-height: 40px;
+}
+h2{
+    text-align: center;
+}
+.button{
+    display: flex;
+    width: 150px;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: lightpink;
+
 }

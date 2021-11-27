@@ -1,0 +1,17 @@
+.item{
+    list-style: none;
+    font-size: 20px;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+    padding: 20px;
+    width: 60vw;
+    border-radius: 10px;
+    margin: auto;
+    transition: .5s;
+    color: black;
+    text-decoration: none;
+}
+.item:hover{
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    transition: .5s;
+}

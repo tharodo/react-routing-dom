@@ -12,13 +12,17 @@ function Nav() {
 
     return (
         <nav className={style.styleNav}>
-            <h3>Logo</h3>
+            <h3>
+                <Link style={styleLink} to="/">
+                    Logo
+                </Link>
+            </h3>
             <ul className={style.navLinks}>
                 <Link style={styleLink} to="/about" >
-                    <li>About</li>
+                    <li className={style.navDetail}>About</li>
                 </Link>
                 <Link style={styleLink} to="/shop">
-                    <li>Shop</li>
+                    <li className={style.navDetail}>Shop</li>
                 </Link>
             </ul>
         </nav>
