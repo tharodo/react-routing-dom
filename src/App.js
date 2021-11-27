@@ -24,6 +24,7 @@ function App() {
             component={About}
           />
           <Route
+            exact
             path="/shop"
             component={Shop}
           />
